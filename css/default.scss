@@ -1,0 +1,98 @@
+$font-fira: 'Fira Sans', sans-serif;
+$font-varela: 'Varela Round', sans-serif;
+
+$light-color: #f2f2f2;
+$dark-color: #2c3e50;
+
+$shadow: 44, 62, 80;
+
+$primary: #59ffcb;
+$light_primary: #3be8b0;
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+// default functions
+
+@mixin flex {
+	display: flex !important;
+
+	flex-direction: inherit;
+	justify-content: center;
+	align-items: center;
+}
+
+//
+
+// default classes
+
+.none {
+	display: none !important;
+}
+
+.color {
+	color: $primary important;
+	font-weight: 500 !important;
+}
+
+.title {
+	user-select: none;
+	font-size: 2rem !important;
+	margin: 15px 0 0 0 !important;
+}
+
+.desc {
+	color: rgba($color: $dark-color, $alpha: .75) !important;
+	font-weight: 400 !important;
+	margin: 10px 0;
+}
+
+.highlight {
+	font-size: 10rem;
+}
+
+.btn {
+	outline: none;
+	cursor: pointer;
+	padding: 10px 35px;
+	font-size: 1rem;
+	border: none;
+	background-color: $primary;
+	color: $light-color;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-radius: 5px;
+	box-shadow: 5px 5px 20px rgba($color: $primary, $alpha: .5);
+
+	transition: all .2s ease-in-out;
+
+	&:hover {
+		background-color: $light_primary;
+	}
+}
+
+.input {
+	// cursor: default;
+	// width: 100%;
+	resize: none;
+	min-width: 250px;
+	font-size: 20px;
+	box-shadow: 5px 5px 10px rgba($color: $dark-color, $alpha: .5);
+	outline: none;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 5px;
+	font-family: $font-fira;
+
+	&::placeholder {
+		opacity: .5;
+	}
+}
+
+//
