@@ -6,7 +6,7 @@ I made a list, and when you hover over it, the list goes all the way to the righ
 
 ### Made with
 
-* HTML (i'm gonna redo this with bulma framework).
+* HTML
 * CSS
 * Javascript
 
